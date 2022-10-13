@@ -233,13 +233,3 @@ nav .menu li a:hover {
       margin-top: 10vh;
   }
 }
-
-@media screen and (max-width: 680px){
-  .port-main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10vh;
-  }
-}
