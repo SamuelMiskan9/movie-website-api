@@ -177,7 +177,7 @@ nav .menu li a:hover {
   font-size: 25px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 328px) {
   body, html {
       background-repeat: no-repeat;
       scroll-behavior: smooth;
