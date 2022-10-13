@@ -2,11 +2,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
 
+/*SCROLLBAR*/
+
+/* Width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Background */
+::-webkit-scrollbar-track {
+  background :#083d77;
+}
+
+/*The Scrollbar itself*/
+::-webkit-scrollbar-thumb {
+  background:#242424;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background :#ffffff;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   font-family: "Playfair Display SC", serif;
   background-color: rgba(151, 151, 151, 0.03);
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  
 }
 
 * {
@@ -105,6 +130,7 @@ nav .menu li a:hover {
   -webkit-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 28px 0px rgba(0, 0, 0, 0.75);
   outline: 2px solid white;
+  text-align: center;
 }
 
 .projects:hover {
@@ -115,6 +141,8 @@ nav .menu li a:hover {
 .desc {
   padding: 2em;
   height: 40vh;
+  text-align: left;
+  overflow:auto;
 }
 .desc a {
   text-decoration: none;
@@ -166,4 +194,21 @@ nav .menu li a:hover {
 .portfolio h2 {
   text-transform: uppercase;
   font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  body, html {
+      background-repeat: no-repeat;
+      scroll-behavior: smooth;
+      scroll-snap-type: none;
+      overflow-x: hidden;
+  }
+  .port-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10vh;
+      flex-wrap: wrap;
+  }
 }
