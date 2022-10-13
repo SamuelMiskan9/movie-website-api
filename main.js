@@ -36,3 +36,20 @@ const movieShowData = (data) => {
 
   })
 }
+
+const searchBar = document.getElementById('search-film');
+searchBar.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const searchTerm = searchWoi.value;
+
+  if(searchTerm) {
+    getMoviesData(SEARCH_URL+'&query='+searchTerm);
+  } else{
+    getMoviesData(UPCOMING);
+  }
+
+  if(searchWoi.value == '') {
+    alert('Please Input Your Film');
+  }
+})
