@@ -177,7 +177,7 @@ nav .menu li a:hover {
   font-size: 25px;
 }
 
-@media screen and (max-width: 328px) {
+@media screen and (max-width: 400px) {
   body, html {
       background-repeat: no-repeat;
       scroll-behavior: smooth;
@@ -211,7 +211,7 @@ nav .menu li a:hover {
 }
 
 .btn:hover{
-  background-color: #21278b;
+  background-color: lightgreen;
   color: white;
   transition: 0.4s;
 }
